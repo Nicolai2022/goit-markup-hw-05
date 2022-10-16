@@ -784,7 +784,7 @@ img {
   background: var(--primery-white-color);
 }
 
-/* ховер cторінок Студія Портфоліо Контакти */
+/* ховер та підкреслення для cторінок Студія Портфоліо Контакти */
 
 .nav-link::after {
   content: '';
@@ -800,6 +800,7 @@ img {
 
   opacity: 0;
   transition: opacity;
+  border-radius: 2px;
 }
 
 .nav-link {
