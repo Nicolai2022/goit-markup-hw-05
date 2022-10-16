@@ -98,11 +98,13 @@ img {
 .contact-link:hover,
 .contact-link:focus {
   color: var(--accent-color);
+  transition: transform 250ms var(--transform-function);
 }
 
 .address-link-white:hover,
 .address-link-white:focus {
   color: var(--accent-color);
+  transition: transform 250ms var(--transform-function);
 }
 
 /* svg */
@@ -115,6 +117,7 @@ img {
 .address-link:hover,
 .address-link:focus {
   color: var(--accent-color);
+  transition: transform 250ms var(--transform-function);
 }
 
 .list {
@@ -197,6 +200,7 @@ img {
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-color);
+  transition: transform 250ms var(--transform-function);
 }
 
 .hero {
@@ -270,6 +274,7 @@ img {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--primery-white-color);
+  transition: transform 250ms var(--transform-function);
 }
 
 .visually-hidden {
@@ -461,6 +466,7 @@ img {
 .social-link:focus {
   background-color: var(--accent-color);
   fill: var(--primery-white-color);
+  transition: transform 250ms var(--transform-function);
 }
 
 .social-link {
@@ -525,6 +531,7 @@ img {
 .clients-link:focus {
   border-color: var(--accent-color);
   color: var(--accent-color);
+  transition: transform 250ms var(--transform-function);
 }
 
 .footer {
@@ -621,6 +628,7 @@ img {
 .footer-address-link:hover,
 .footer-address-link:focus {
   background-color: var(--accent-color);
+  transition: transform 250ms var(--transform-function);
 }
 
 .cards-title-text {
@@ -686,6 +694,7 @@ img {
 .cards-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: transform 250ms var(--transform-function);
 }
 
 .portfolio-link {
@@ -712,6 +721,7 @@ img {
   color: var(--primery-white-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: transform 250ms var(--transform-function);
 }
 
 .filter-button {
@@ -759,6 +769,21 @@ img {
   background-color: var(--primery-white-color);
 }
 
+.icon-button-close {
+  padding: 6px 6px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.button-close {
+  padding: 8px 8px;
+  border: none;
+  background: var(--primery-white-color);
+}
+
 /* ховер cторінок Студія Портфоліо Контакти */
 
 .nav-link::after {
@@ -785,6 +810,7 @@ img {
 .nav-link:focus::after,
 .nav-link:active::after {
   opacity: 1;
+  transition: transform 250ms var(--transform-function);
 }
 
 /* ховер картки */
@@ -837,6 +863,7 @@ img {
   transform: translateY(-100%);
 
   opacity: 1;
+  transition: transform 250ms var(--transform-function);
 }
 
 .cards-item {
