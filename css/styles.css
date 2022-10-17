@@ -686,7 +686,7 @@ img {
 
   min-width: 528px;
   min-height: 581px;
-  padding: 15px;
+  padding: 40px;
 
   background-color: var(--primery-white-color);
 }
@@ -704,6 +704,9 @@ img {
   padding: 8px 8px;
   border: none;
   background: var(--primery-white-color);
+  position: absolute;
+  top: 8px;
+  right: 8px;
 }
 
 /* ховер та підкреслення для cторінок Студія Портфоліо Контакти */
