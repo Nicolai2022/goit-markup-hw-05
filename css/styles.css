@@ -77,12 +77,12 @@ img {
   fill: currentColor;
   display: flex;
   align-items: center;
+  transition: color 250ms var(--transform-function);
 }
 
 .contact-link:hover,
 .contact-link:focus {
   color: var(--accent-color);
-  transition: transform 250ms var(--transform-function);
 }
 
 .address-link-white:hover,
@@ -101,7 +101,6 @@ img {
 .address-link:hover,
 .address-link:focus {
   color: var(--accent-color);
-  transition: transform 250ms var(--transform-function);
 }
 
 .list {
@@ -137,6 +136,8 @@ img {
   font-size: 14px;
   line-height: calc(16 / 14);
   text-decoration: none;
+
+  transition: transform 250ms var(--transform-function);
 }
 
 .nav-item {
@@ -169,7 +170,7 @@ img {
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-color);
-  transition: transform 250ms var(--transform-function);
+  transition: color 250ms var(--transform-function);
 }
 
 .hero {
@@ -234,14 +235,13 @@ img {
   line-height: 1.9;
   letter-spacing: 0.06em;
   cursor: pointer;
+
+  transition: background-color 250ms var(--transform-function);
 }
 
 .hero-button:hover,
 .hero-button:focus {
   background-color: #188ce8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  color: var(--primery-white-color);
-  transition: transform 250ms var(--transform-function);
 }
 
 .visually-hidden {
@@ -318,13 +318,26 @@ img {
 }
 
 .about-paragraph-title {
-  position: absolute;
-  width: 100%;
   bottom: 0;
-  right: 0;
+  right: -0%;
+
+  position: absolute;
+  /* width: 100%; */
+  width: 370px;
   height: 70px;
-  padding: 27px 0px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* bottom: 0;
+  right: 0;
+
+  padding: 27px 0px; */
   background: rgba(47, 48, 58, 0.8);
+}
+
+.about-paragraph-title {
   color: var(--primery-white-color);
   text-align: center;
   font-weight: 700;
@@ -336,7 +349,6 @@ img {
 
 .about-item {
   position: relative;
-  width: 370px;
 }
 
 .team {
@@ -402,7 +414,6 @@ img {
 .social-link:focus {
   background-color: var(--accent-color);
   fill: var(--primery-white-color);
-  transition: transform 250ms var(--transform-function);
 }
 
 .social-link {
@@ -413,6 +424,8 @@ img {
   align-items: center;
   justify-content: center;
   fill: var(--social-primery-color);
+  transition: background-color 250ms var(--transform-function),
+    fill 250ms var(--transform-function);
 }
 
 .team-item-icon {
@@ -452,6 +465,8 @@ img {
   align-items: center;
   justify-content: center;
   color: var(--social-primery-color);
+  transition: border-color 250ms var(--transform-function),
+    color 250ms var(--transform-function);
 }
 
 .clients-link-icon {
@@ -462,7 +477,6 @@ img {
 .clients-link:focus {
   border-color: var(--accent-color);
   color: var(--accent-color);
-  transition: transform 250ms var(--transform-function);
 }
 
 .footer {
@@ -510,6 +524,8 @@ img {
   font-style: normal;
   font-size: 14px;
   line-height: calc(16 / 14);
+
+  transition: color 250ms var(--transform-function);
 }
 
 .address-link {
@@ -546,6 +562,8 @@ img {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   color: var(--primery-white-color);
+
+  transition: background-color 250ms var(--transform-function);
 }
 
 .address-icon-social {
@@ -555,7 +573,6 @@ img {
 .footer-address-link:hover,
 .footer-address-link:focus {
   background-color: var(--accent-color);
-  transition: transform 250ms var(--transform-function);
 }
 
 .cards-title-text {
@@ -637,13 +654,13 @@ img {
 }
 
 /* buttons портфоліо */
+
 .hover-button:hover,
 .hover-button:focus {
   background-color: var(--accent-color);
   color: var(--primery-white-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: transform 250ms var(--transform-function);
 }
 
 .filter-button {
@@ -656,6 +673,10 @@ img {
   line-height: calc(26 / 16);
   text-align: center;
   letter-spacing: 0.03em;
+
+  transition: background-color 250ms var(--transform-function),
+    color 250ms var(--transform-function),
+    box-shadow 250ms var(--transform-function);
 }
 
 .portfolio {
@@ -726,6 +747,8 @@ img {
   opacity: 0;
   transition: opacity;
   border-radius: 2px;
+
+  transition: transform 250ms var(--transform-function);
 }
 
 .nav-link {
@@ -736,67 +759,38 @@ img {
 .nav-link:focus::after,
 .nav-link:active::after {
   opacity: 1;
-  transition: transform 250ms var(--transform-function);
 }
 
 /* ховер картки */
 
 .subtitle {
-  position: absolute;
-  content: '';
-  /* left: 0;
-  top: 0;
-  width: 100%; */
   padding: 62px 24px;
   margin: 0;
-  list-style: none;
   background-color: rgba(33, 150, 243, 0.9);
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: calc(28 / 18);
   letter-spacing: 0.03em;
   color: var(--primery-white-color);
-
-  /* display: none; */
-
   transform: translateY(0%);
   transition: transform 250ms var(--transform-function);
-
-  opacity: 0;
 }
 
-/* .cards-title-text {
-  z-index: 1;
-} */
-
 .cards-item:hover .subtitle {
-  display: block;
-
-  padding: 62px 24px;
-  margin: 0;
-  list-style: none;
-  background-color: rgba(33, 150, 243, 0.9);
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: calc(28 / 18);
-  letter-spacing: 0.03em;
-  color: var(--primery-white-color);
-
-  /* left: 0;
-  top: 0;
-  width: 100%; */
-
   transform: translateY(-100%);
-
-  opacity: 1;
-  transition: transform 250ms var(--transform-function);
 }
 
 .cards-item {
   position: relative;
   overflow: hidden;
+}
+
+.paragraph-title {
+  position: relative;
+  width: 370px;
+  height: 294px;
+  overflow: hidden;
+}
+
+.about-paragraph-title {
+  position: absolute;
 }
