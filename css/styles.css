@@ -764,6 +764,7 @@ img {
 /* ховер картки */
 
 .subtitle {
+  position: absolute;
   padding: 62px 24px;
   margin: 0;
   background-color: rgba(33, 150, 243, 0.9);
@@ -779,18 +780,13 @@ img {
   transform: translateY(-100%);
 }
 
-.cards-item {
+/* .cards-item {
   position: relative;
-  overflow: hidden;
-}
+} */
 
-.paragraph-title {
+.cards-image-title {
   position: relative;
   width: 370px;
   height: 294px;
   overflow: hidden;
-}
-
-.about-paragraph-title {
-  position: absolute;
 }
